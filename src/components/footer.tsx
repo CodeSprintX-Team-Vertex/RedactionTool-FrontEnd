@@ -6,15 +6,15 @@ const links = [
         group: 'Product',
         items: [
             {
+                title: 'Home',
+                href: '#',
+            },
+            {
                 title: 'Features',
                 href: '#',
             },
             {
-                title: 'Solution',
-                href: '#',
-            },
-            {
-                title: 'Customers',
+                title: 'Dashboard',
                 href: '#',
             },
             {
@@ -22,96 +22,80 @@ const links = [
                 href: '#',
             },
             {
-                title: 'Help',
-                href: '#',
-            },
-            {
                 title: 'About',
                 href: '#',
             },
         ],
     },
+    // {
+    //     group: 'Solution',
+    //     items: [
+    //         {
+    //             title: 'Startup',
+    //             href: '#',
+    //         },
+    //         {
+    //             title: 'Freelancers',
+    //             href: '#',
+    //         },
+    //         {
+    //             title: 'Organizations',
+    //             href: '#',
+    //         },
+    //         {
+    //             title: 'Students',
+    //             href: '#',
+    //         },
+    //         {
+    //             title: 'Collaboration',
+    //             href: '#',
+    //         },
+    //         {
+    //             title: 'Design',
+    //             href: '#',
+    //         },
+    //         {
+    //             title: 'Management',
+    //             href: '#',
+    //         },
+    //     ],
+    // },
     {
-        group: 'Solution',
+        group: 'Features',
         items: [
             {
-                title: 'Startup',
+                title: 'feature1',
                 href: '#',
             },
             {
-                title: 'Freelancers',
+                title: 'feature2',
                 href: '#',
             },
             {
-                title: 'Organizations',
+                title: 'feature3',
                 href: '#',
             },
             {
-                title: 'Students',
-                href: '#',
-            },
-            {
-                title: 'Collaboration',
-                href: '#',
-            },
-            {
-                title: 'Design',
-                href: '#',
-            },
-            {
-                title: 'Management',
+                title: 'feature4',
                 href: '#',
             },
         ],
     },
     {
-        group: 'Company',
+        group: 'Contact',
         items: [
             {
-                title: 'About',
+                title: 'Tel No: +94XX XXX XXXX',
                 href: '#',
             },
             {
-                title: 'Careers',
+                title: 'Email: xxxx@gmail.com',
                 href: '#',
             },
             {
-                title: 'Blog',
+                title: 'Address: Colombo, Sri Lanka.',
                 href: '#',
-            },
-            {
-                title: 'Press',
-                href: '#',
-            },
-            {
-                title: 'Contact',
-                href: '#',
-            },
-            {
-                title: 'Help',
-                href: '#',
-            },
-        ],
-    },
-    {
-        group: 'Legal',
-        items: [
-            {
-                title: 'Licence',
-                href: '#',
-            },
-            {
-                title: 'Privacy',
-                href: '#',
-            },
-            {
-                title: 'Cookies',
-                href: '#',
-            },
-            {
-                title: 'Security',
-                href: '#',
-            },
+            }
         ],
     },
 ]
@@ -119,7 +103,7 @@ const links = [
 export default function FooterSection() {
     return (
         <footer className="border-b bg-white pt-20 dark:bg-transparent">
-            <div className="mx-auto max-w-5xl px-6">
+            <div className="mx-auto max-w-5xl px-2">
                 <div className="grid gap-12 md:grid-cols-5">
                     <div className="md:col-span-2">
                         <Link href="/" aria-label="go home" className="block size-fit">
@@ -127,7 +111,7 @@ export default function FooterSection() {
                         </Link>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-6 sm:grid-cols-4 md:col-span-3">
+                    <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:col-span-3">
                         {links.map((link, index) => (
                             <div key={index} className="space-y-4 text-sm">
                                 <span className="block font-medium">{link.group}</span>
@@ -141,7 +125,7 @@ export default function FooterSection() {
                     </div>
                 </div>
                 <div className="mt-12 flex flex-wrap items-end justify-between gap-6 border-t py-6">
-                    <span className="text-muted-foreground order-last block text-center text-sm md:order-first">© {new Date().getFullYear()} Tailus UI, All rights reserved</span>
+                    <span className="text-muted-foreground order-last block text-center text-sm md:order-first">© {new Date().getFullYear()} Team Vertex, All rights reserved</span>
                     <div className="order-first flex flex-wrap justify-center gap-6 text-sm md:order-last">
                         <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="X/Twitter" className="text-muted-foreground hover:text-primary block">
                             <svg className="size-6" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
