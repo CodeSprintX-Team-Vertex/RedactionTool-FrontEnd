@@ -81,23 +81,24 @@ export default function HeroSection() {
                 <AnimatedGroup variants={transitionVariants}>
                   <Link
                     href="#link"
-                    className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
+                    className="hover:bg-background dark:hover:border-t-border bg-amber-200 group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 pr-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
                   >
-                    <span className="text-foreground text-sm">
-                      Introducing Support for AI Models
+                    <span className="text-black text-sm">
+                      {/* text-foreground */}
+                      Early UI Demo of ScrubNet Web
                     </span>
-                    <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
+                    {/* <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span> */}
 
-                    <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
-                      <div className="flex w-12 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
+                    {/* <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
+                     <div className="flex w-12 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
                         <span className="flex size-6">
                           <ArrowRight className="m-auto size-3" />
                         </span>
                         <span className="flex size-6">
                           <ArrowRight className="m-auto size-3" />
                         </span>
-                      </div>
-                    </div>
+                      </div> 
+                    </div>*/}
                   </Link>
                 </AnimatedGroup>
 
@@ -117,7 +118,8 @@ export default function HeroSection() {
                   as="p"
                   className="mx-auto mt-8 max-w-2xl text-balance text-lg"
                 >
-                  Real-time and pre-recorded video privacy made effortless with AI-driven detection and selective blurring.
+                  Real-time and pre-recorded video privacy made effortless with
+                  AI-driven detection and selective blurring.
                 </TextEffect>
 
                 <AnimatedGroup
@@ -191,7 +193,7 @@ export default function HeroSection() {
                   />
                   <Image
                     className="z-2 border-border/25 aspect-15/8 relative rounded-2xl border dark:hidden"
-                    src="/image.png"
+                    src="/ui-light.png"
                     alt="app screen"
                     width="2700"
                     height="1440"
