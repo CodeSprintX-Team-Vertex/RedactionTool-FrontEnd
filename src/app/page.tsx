@@ -107,7 +107,7 @@ export default function HeroSection() {
                   as="h1"
                   className="mt-8 text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem]"
                 >
-                  Modern Solutions for Customer Engagement
+                  Start Your Smarter & Safe Streams
                 </TextEffect>
                 <TextEffect
                   per="line"
@@ -117,8 +117,7 @@ export default function HeroSection() {
                   as="p"
                   className="mx-auto mt-8 max-w-2xl text-balance text-lg"
                 >
-                  Highly customizable components for building modern websites
-                  and applications that look and feel the way you mean it.
+                  Real-time and pre-recorded video privacy made effortless with AI-driven detection and selective blurring.
                 </TextEffect>
 
                 <AnimatedGroup
@@ -145,7 +144,7 @@ export default function HeroSection() {
                       className="rounded-xl px-5 text-base"
                     >
                       <Link href="#link">
-                        <span className="text-nowrap">Start Building</span>
+                        <span className="text-nowrap">Get Start</span>
                       </Link>
                     </Button>
                   </div>
@@ -157,7 +156,7 @@ export default function HeroSection() {
                     className="h-10.5 rounded-xl px-5"
                   >
                     <Link href="#link">
-                      <span className="text-nowrap">Request a demo</span>
+                      <span className="text-nowrap">Learn More</span>
                     </Link>
                   </Button>
                 </AnimatedGroup>
@@ -205,14 +204,14 @@ export default function HeroSection() {
         <section className="bg-background pb-16 pt-16 md:pb-32">
           <div className="group relative m-auto max-w-5xl px-6">
             <div className="absolute inset-0 z-10 flex scale-95 items-center justify-center opacity-0 duration-500 group-hover:scale-100 group-hover:opacity-100">
-              <Link
+              {/* <Link
                 href="/"
                 className="block text-sm duration-150 hover:opacity-75"
               >
                 <span> Meet Our Customers</span>
 
                 <ChevronRight className="ml-1 inline-block size-3" />
-              </Link>
+              </Link> */}
             </div>
             <div className="group-hover:blur-xs mx-auto mt-12 grid max-w-2xl grid-cols-4 gap-x-12 gap-y-8 transition-all duration-500 group-hover:opacity-50 sm:gap-x-16 sm:gap-y-14">
               <div className="flex">
