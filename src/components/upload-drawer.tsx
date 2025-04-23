@@ -45,15 +45,15 @@ export function UploadDrawer({ setVideoURL }: UploadDrawerProps) {
             <RadioGroup defaultValue="comfortable">
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="default" id="r1" />
-                <Label htmlFor="r1">Default</Label>
+                <Label htmlFor="r1">Auto</Label>
               </div>
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="comfortable" id="r2" />
-                <Label htmlFor="r2">Comfortable</Label>
+                <Label htmlFor="r2">Sensitive Text</Label>
               </div>
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="compact" id="r3" />
-                <Label htmlFor="r3">Compact</Label>
+                <Label htmlFor="r3">Faces</Label>
               </div>
             </RadioGroup>
           </DrawerHeader>

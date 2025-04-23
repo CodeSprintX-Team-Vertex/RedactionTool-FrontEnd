@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { TextEffect } from "@/components/ui/text-effect";
 import { AnimatedGroup } from "@/components/ui/animated-group";
+import Features2 from "@/components/features-10";
 
 const transitionVariants = {
   item: {
@@ -39,7 +40,7 @@ export default function HeroSection() {
           <div className="h-320 -translate-y-87.5 absolute left-0 top-0 w-60 -rotate-45 bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.04)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)]" />
         </div>
         <section>
-          <div className="relative pt-24 md:pt-36">
+          <div className="relative pt-24 md:pt-36 overflow-hidden">
             <AnimatedGroup
               variants={{
                 container: {
@@ -65,12 +66,12 @@ export default function HeroSection() {
                   },
                 },
               }}
-              className="absolute inset-0 -z-20"
+              className="hidden sm:block absolute inset-0 -z-20"
             >
               <Image
                 src="https://res.cloudinary.com/dg4jhba5c/image/upload/v1741605538/night-background_ni3vqb.jpg"
                 alt="background"
-                className="absolute inset-x-0 top-56 -z-20 hidden lg:top-32 dark:block"
+                className="absolute inset-x-0 top-56 -z-20 sm:top-6 lg:top-32 dark:block"
                 width="3276"
                 height="4095"
               />
@@ -81,7 +82,7 @@ export default function HeroSection() {
                 <AnimatedGroup variants={transitionVariants}>
                   <Link
                     href="#link"
-                    className="hover:bg-background dark:hover:border-t-border bg-amber-200 group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 pr-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
+                    className="hover:bg-white dark:hover:border-t-border bg-amber-200 group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 pr-4 shadow-md shadow-amber-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-amber-950"
                   >
                     <span className="text-black text-sm">
                       {/* text-foreground */}
@@ -119,7 +120,7 @@ export default function HeroSection() {
                   className="mx-auto mt-8 max-w-2xl text-balance text-lg"
                 >
                   Real-time and pre-recorded video privacy made effortless with
-                  AI-driven detection and selective blurring.
+                  AI-driven detection and automatic bluring.
                 </TextEffect>
 
                 <AnimatedGroup
@@ -146,7 +147,7 @@ export default function HeroSection() {
                       className="rounded-xl px-5 text-base"
                     >
                       <Link href="#link">
-                        <span className="text-nowrap">Get Start</span>
+                        <span className="text-nowrap">Get Started</span>
                       </Link>
                     </Button>
                   </div>
@@ -158,7 +159,7 @@ export default function HeroSection() {
                     className="h-10.5 rounded-xl px-5"
                   >
                     <Link href="#link">
-                      <span className="text-nowrap">Learn More</span>
+                      <span className="text-nowrap">Download</span>
                     </Link>
                   </Button>
                 </AnimatedGroup>
@@ -183,6 +184,7 @@ export default function HeroSection() {
                   aria-hidden
                   className="bg-linear-to-b to-background absolute inset-0 z-10 from-transparent from-35%"
                 />
+
                 <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
                   <Image
                     className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block"
@@ -203,17 +205,18 @@ export default function HeroSection() {
             </AnimatedGroup>
           </div>
         </section>
-        <section className="bg-background pb-16 pt-16 md:pb-32">
+        <Features2 />
+        {/* <section className="bg-background pb-16 pt-16 md:pb-32">
           <div className="group relative m-auto max-w-5xl px-6">
             <div className="absolute inset-0 z-10 flex scale-95 items-center justify-center opacity-0 duration-500 group-hover:scale-100 group-hover:opacity-100">
-              {/* <Link
+               <Link
                 href="/"
                 className="block text-sm duration-150 hover:opacity-75"
               >
                 <span> Meet Our Customers</span>
 
                 <ChevronRight className="ml-1 inline-block size-3" />
-              </Link> */}
+              </Link> 
             </div>
             <div className="group-hover:blur-xs mx-auto mt-12 grid max-w-2xl grid-cols-4 gap-x-12 gap-y-8 transition-all duration-500 group-hover:opacity-50 sm:gap-x-16 sm:gap-y-14">
               <div className="flex">
@@ -292,7 +295,7 @@ export default function HeroSection() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
     </>
   );
